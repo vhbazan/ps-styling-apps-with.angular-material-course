@@ -4,12 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatButtonModule} from '@angular/material/button';
-import {MatCheckboxModule} from '@angular/material/checkbox';
-import {MatIconModule} from '@angular/material/icon';
+
 import { FormsModule } from '@angular/forms';
 import { SwiperModule } from 'swiper/angular';
 import { CommonModule } from '@angular/common';
+import { MaterialModule } from './shared/material.module';
 
 @NgModule({
   declarations: [
@@ -19,11 +18,9 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     CommonModule,
     BrowserAnimationsModule,
+    MaterialModule,
     FormsModule,
-    SwiperModule,
-    MatButtonModule,
-    MatIconModule,
-    MatCheckboxModule
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
