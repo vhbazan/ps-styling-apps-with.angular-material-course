@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
-import { FormsModule } from '@angular/forms';
 import { SwiperModule } from 'swiper/angular';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './shared/material.module';
@@ -24,7 +23,7 @@ const routes: Routes = [
     CommonModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule,
+
     SwiperModule,
     RouterModule.forRoot(routes)
   ],

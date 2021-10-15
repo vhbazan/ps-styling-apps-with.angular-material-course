@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ButtonsComponent } from './buttons/buttons.component';
 
 const routes: Routes = [
-  {path: '', component: ButtonsComponent }
+  { path: 'buttons', component: ButtonsComponent },
+  { path: '**', redirectTo: 'buttons' }
 ];
 
 @NgModule({
