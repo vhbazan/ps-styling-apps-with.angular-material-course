@@ -1,6 +1,13 @@
 <mat-sidenav-container class="app-sidenav-container" (backdropClick)="close('backdrop')">
-  <mat-sidenav #sidenav mode="side" class="app-sidenav" (keydown.escape)="close('escape')">
-    Sidenav content
+  <mat-sidenav opened #sidenav mode="side" class="app-sidenav" (keydown.escape)="close('escape')">
+    <mat-toolbar color="primary">
+      <span>Contacts</span>
+    </mat-toolbar>
+    <mat-list role="list">
+      <mat-list-item role="listitem">Item 1</mat-list-item>
+      <mat-list-item role="listitem">Item 2</mat-list-item>
+      <mat-list-item role="listitem">Item 3</mat-list-item>
+    </mat-list>
     <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
   </mat-sidenav>
 
