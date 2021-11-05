@@ -1,5 +1,6 @@
 <mat-sidenav-container class="app-sidenav-container" (backdropClick)="close('backdrop')">
-  <mat-sidenav opened #sidenav mode="side" class="app-sidenav" (keydown.escape)="close('escape')">
+  <mat-sidenav [opened]="!isScreenSmall" #sidenav [mode]="isScreenSmall ? 'over' : 'side' "
+    class="app-sidenav mat-elevation-z10" (keydown.escape)="close('escape')">
     <mat-toolbar color="primary">
       <span>Contacts</span>
     </mat-toolbar>
