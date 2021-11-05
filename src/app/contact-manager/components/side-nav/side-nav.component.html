@@ -1,2 +1,14 @@
-<app-tool-bar></app-tool-bar>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="app-sidenav-container" (backdropClick)="close('backdrop')">
+  <mat-sidenav #sidenav mode="side" class="app-sidenav" (keydown.escape)="close('escape')">
+    Sidenav content
+    <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="app-sidenav-content">
+    <app-tool-bar></app-tool-bar>
+    <router-outlet></router-outlet>
+    <button type="button" mat-button (click)="sidenav.open()">
+      Open Side nav
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>

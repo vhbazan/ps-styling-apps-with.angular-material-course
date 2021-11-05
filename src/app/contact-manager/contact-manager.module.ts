@@ -7,6 +7,7 @@ import { ContactManagerComponent } from './contact-manager.component';
 import { ToolBarComponent } from './components/tool-bar/tool-bar.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { MaterialModule } from '../shared/material.module';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
+    MaterialModule,
     RouterModule.forChild(routes)
   ]
 })
