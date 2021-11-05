@@ -13,10 +13,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content class="app-sidenav-content">
-    <app-tool-bar></app-tool-bar>
+    <app-tool-bar (toggleSidenav)="sidenav.toggle()" ></app-tool-bar>
     <router-outlet></router-outlet>
-    <button type="button" mat-button (click)="sidenav.open()">
-      Open Side nav
-    </button>
   </mat-sidenav-content>
 </mat-sidenav-container>
